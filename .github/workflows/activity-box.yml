@@ -2,7 +2,7 @@ name: Activity Box
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '*/10 * * * *'
 
 jobs:
   build:
@@ -13,6 +13,6 @@ jobs:
       - uses: hlkim/activity-box@master
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
-          GH_USERNAME: ${{ github.actor }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GIST_ID: ${{ secrets.GIST_ID }}
+          GH_USERNAME: hlkim
+          GIST_ID: 14cfb9d3584b1fbcb8c28de5c387ee32
