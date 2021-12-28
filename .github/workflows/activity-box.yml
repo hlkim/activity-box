@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: hlkim/activity-box@master
+      - uses: hlkim/activity-box
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
           GH_USERNAME: ${{ github.actor }}
